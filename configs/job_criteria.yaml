@@ -1,0 +1,45 @@
+job_preferences:
+  titles:
+    - machine learning engineer
+    - data scientist
+    - ai engineer
+    - applied scientist
+    - mlops engineer
+
+  required_skills:
+    - python
+    - pytorch
+    - tensorflow
+    - sagemaker
+    - huggingface
+    - docker
+    - lambda
+    - langchain
+    - prompt engineering
+
+  optional_skills:
+    - airflow
+    - fastapi
+    - react
+    - kubernetes
+    - postgres
+    - redis
+
+  locations:
+    - remote
+    - united states
+    - usa
+
+  exclude:
+    titles:
+      - internship
+      - intern
+      - contractor
+      - contract
+      - senior manager
+    companies:
+      - oracle
+      - infosys
+    keywords:
+      - unpaid
+      - relocation required

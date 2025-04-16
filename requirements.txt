@@ -1,0 +1,7 @@
+openai
+playwright
+bs4
+requests
+pydantic
+python-dotenv
+langchain
