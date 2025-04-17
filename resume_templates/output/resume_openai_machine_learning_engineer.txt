@@ -1,0 +1,9 @@
+Experienced Machine Learning Engineer with 4 years of versatile experience in ML, Full Stack Development, and AWS. Skilled in deploying ML models using SageMaker and Bedrock, with extensive hands-on experience in PyTorch, TensorFlow, HuggingFace, and LangChain. Proficient in building MLOps pipelines using Docker, Lambda, and Terraform to streamline model deployment processes. Experienced in deploying applications with Django, FastAPI, PostgreSQL, and Redis. 
+
+Key Skills:
+- ML model deployment using SageMaker and Bedrock
+- Proficient in PyTorch, TensorFlow, HuggingFace, and LangChain
+- Strong experience with MLOps pipelines using Docker, Lambda, and Terraform
+- Deployment of applications with Django, FastAPI, PostgreSQL, and Redis
+
+I am excited about the opportunity to contribute my skills and experience to OpenAI as a Machine Learning Engineer, leveraging my expertise in Python and PyTorch to drive innovation and impact in the field of AI.

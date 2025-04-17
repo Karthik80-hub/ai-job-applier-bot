@@ -42,18 +42,26 @@ def filter_and_rank(jobs):
 
     return filtered_jobs
 
-
-
-import openai
 import os
 from dotenv import load_dotenv
+from openai import OpenAI
 
-load_dotenv()  # Load API key from .env file
+load_dotenv()
 
-def generate_custom_resume(job):
-    openai.api_key = os.getenv("OPENAI_API_KEY")
+def generate_custom_resume(job, test=False):
+    file_name = f"resume_templates/output/resume_{job['company'].lower().replace(' ', '_')}_{job['title'].lower().replace(' ', '_')}.txt"
+    os.makedirs(os.path.dirname(file_name), exist_ok=True)
 
-    prompt = f"""
+    if test:
+        result = f"""Tailored Resume Summary for {job['title']} at {job['company']}:
+- Simulated resume (TEST MODE)
+- Skills matched: {', '.join(job.get('matched_skills', []))}
+- This is a placeholder. No OpenAI call was made."""
+        print(f" [TEST MODE] Resume simulated and saved to {file_name}")
+    else:
+        client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+        prompt = f"""
 You are a career assistant helping a candidate apply for jobs.
 Based on the following job description, generate a tailored resume summary that highlights relevant skills, tools, and experience:
 
@@ -72,20 +80,13 @@ Candidate Background:
 Generate a tailored resume summary under 200 words. Use bullet points and match keywords from the job description.
 """
 
-    client = openai.OpenAI(api_key=openai.api_key)
-
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.7
-    )
-
-    result = response.choices[0].message.content
-
-    file_name = f"resume_templates/output/resume_{job['company'].lower().replace(' ', '_')}_{job['title'].lower().replace(' ', '_')}.txt"
-    os.makedirs(os.path.dirname(file_name), exist_ok=True)
+        response = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.7
+        )
+        result = response.choices[0].message.content
+        print(f" Tailored resume saved to {file_name}")
 
     with open(file_name, "w") as f:
         f.write(result)
-
-    print(f"✅ Tailored resume saved to {file_name}")

@@ -1,0 +1,38 @@
+{
+  "default": {
+    "name": "input[name='name']",
+    "email": "input[name='email']",
+    "resume": "input[type='file']",
+    "submit": "button[type='submit']"
+  },
+  "greenhouse.io": {
+    "name": "input#first_name",
+    "email": "input#email",
+    "resume": "input#resume",
+    "submit": "input[type='submit']"
+  },
+  "boards.greenhouse.io": {
+    "name": "input#first_name",
+    "email": "input#email",
+    "resume": "input#resume",
+    "submit": "input[type='submit']"
+  },
+  "job-boards.greenhouse.io": {
+    "name": "input#first_name",
+    "email": "input#email",
+    "resume": "input#resume",
+    "submit": "input[type='submit']"
+  },
+  "myworkdayjobs.com": {
+    "name": "input[name='applicant.name']",
+    "email": "input[name='applicant.email']",
+    "resume": "input[type='file']",
+    "submit": "button[data-automation-id='submitButton']"
+  },
+  "workday.com": {
+    "name": "input[name='applicant.name']",
+    "email": "input[name='applicant.email']",
+    "resume": "input[type='file']",
+    "submit": "button[data-automation-id='submitButton']"
+  }
+}

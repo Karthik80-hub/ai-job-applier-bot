@@ -7,8 +7,8 @@ def fetch_jobs():
             "title": "Machine Learning Engineer",
             "company": "OpenAI",
             "location": "Remote",
-            "description": "Build AI tools using Python, PyTorch, and SageMaker.",
-            "url": "https://careers.openai.com/job/123"
+            "description": "We are hiring ML engineers with Python and PyTorch.",
+            "url": "https://job-boards.greenhouse.io/greenhouse/jobs/6606249?gh_jid=6606249"
         },
         {
             "title": "Data Analyst Intern",

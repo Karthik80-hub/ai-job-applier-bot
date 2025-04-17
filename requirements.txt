@@ -5,3 +5,9 @@ requests
 pydantic
 python-dotenv
 langchain
+
+# Add for dashboard + database
+streamlit
+psycopg2-binary
+pandas
+matplotlib
