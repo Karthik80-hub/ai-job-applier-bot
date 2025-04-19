@@ -11,3 +11,7 @@ streamlit
 psycopg2-binary
 pandas
 matplotlib
+python-docx
+docx2pdf; platform_system == "Windows"
+PyMuPDF
+phonenumbers

@@ -1,0 +1,51 @@
+--- ORIGINAL RESUME ---
+
+John Doe
+
+123 Main Street, Anytown, USA
+
+john.doe@example.com
+
+Objective: A computer scientist with a strong background in machine learning and artificial intelligence, seeking to leverage my skills in a dynamic and innovative company.
+
+Education:
+
+- Bachelor of Science in Computer Science, XYZ University, 2012-2016
+- Master of Science in Artificial Intelligence, XYZ University, 2016-2018
+
+Work Experience:
+
+- Software Engineer, ABC Company, 2018-2020
+  Developed and maintained software applications, utilizing Python and Java.
+
+- Data Scientist, DEF Corporation, 2020-Present
+  Utilized machine learning algorithms to analyze large datasets. Implemented data models and algorithms in Python.
+
+Skills:
+Python, Java, SQL, Machine Learning, Artificial Intelligence, Data Analysis, Problem Solving
+
+--- TAILORED RESUME ---
+
+John Doe
+
+123 Main Street, Anytown, USA
+
+john.doe@example.com
+
+Objective: A dedicated Machine Learning Engineer with professional experience in Large Language Models (LLMs), Prompt Engineering, and cloud-based deployment tools including AWS SageMaker. Seeking to leverage my skills and experience in a dynamic and innovative company.
+
+Education:
+
+- Bachelor of Science in Computer Science, XYZ University, 2012-2016
+- Master of Science in Artificial Intelligence, XYZ University, 2016-2018
+
+Work Experience:
+
+- Software Engineer, ABC Company, 2018-2020
+  Developed and maintained software applications, utilizing Python and Java. Gained exposure to TensorFlow and PyTorch frameworks for machine learning projects.
+
+- Machine Learning Engineer, DEF Corporation, 2020-Present
+  Utilized machine learning algorithms, specifically Large Language Models (LLMs), to analyze and interpret large datasets. Implemented data models and algorithms in Python using PyTorch and TensorFlow. Experienced in Prompt Engineering and deploying models using AWS SageMaker. Familiarity with Docker and Kubernetes for containerization and orchestration.
+
+Skills:
+Python, Java, SQL, Machine Learning, Artificial Intelligence, Large Language Models (LLMs), Prompt Engineering, PyTorch, TensorFlow, AWS SageMaker, Docker, Kubernetes, Data Analysis, Problem Solving

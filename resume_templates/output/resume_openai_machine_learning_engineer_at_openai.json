@@ -1,0 +1,15 @@
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "phone": null,
+  "skills": [
+    "python",
+    "tensorflow",
+    "pytorch",
+    "sagemaker",
+    "docker",
+    "kubernetes",
+    "sql",
+    "aws"
+  ]
+}

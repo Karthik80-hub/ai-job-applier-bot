@@ -1,0 +1,32 @@
+{
+  "personal_info": {
+    "full_name": "kar",
+    "email": "chunchu@gmail.com",
+    "phone": "414-399-5386",
+    "location": "2612 n maryland",
+    "linkedin_url": "jnenehuf",
+    "portfolio_url": "hbebergfrf"
+  },
+  "work_authorization": {
+    "us_citizen": "no",
+    "visa_status": "f1",
+    "sponsorship_required": "no"
+  },
+  "preferences": {
+    "remote_only": "yes",
+    "willing_to_relocate": "yes",
+    "preferred_locations": "yes",
+    "salary_expectation": "90",
+    "available_start_date": "8"
+  },
+  "education": {
+    "highest_degree": "m",
+    "graduation_year": "yes"
+  },
+  "diversity_optional": {
+    "gender": "male",
+    "race_ethnicity": "asia",
+    "disability": "n",
+    "veteran": "m"
+  }
+}

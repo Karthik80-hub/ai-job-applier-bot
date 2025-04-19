@@ -1,0 +1,42 @@
+universal_signup_questions:
+  personal_info:
+    full_name:
+      label: "What is your full legal name?"
+      required: true
+    email:
+      label: "What is your preferred email address?"
+      required: true
+    phone:
+      label: "What is your phone number?"
+      required: true
+    linkedin_url:
+      label: "Your LinkedIn profile URL"
+      required: false
+    portfolio_url:
+      label: "Portfolio, GitHub or personal site (optional)"
+      required: false
+
+  work_authorization:
+    visa_status:
+      label: "What is your current visa/work authorization status?"
+      required: true
+    sponsorship_required:
+      label: "Do you require visa sponsorship?"
+      required: true
+
+  preferences:
+    remote_only:
+      label: "Are you only looking for remote opportunities?"
+      required: false
+    willing_to_relocate:
+      label: "Are you willing to relocate?"
+      required: false
+    preferred_locations:
+      label: "Preferred work locations (comma separated)"
+      required: false
+    salary_expectation:
+      label: "What is your salary expectation? (USD/year)"
+      required: false
+    available_start_date:
+      label: "When can you start a new job?"
+      required: false
