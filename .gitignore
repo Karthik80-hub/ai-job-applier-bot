@@ -1,6 +1,12 @@
 __pycache__/
 .env
 *.pyc
+*.pkl
+*.db
+venv/
+env*/
+frontend/node_modules/
+frontend/build/
 *.log
-*.sqlite3
-resume_templates/*.pdf
+*.csv
+__pycache__/ 
