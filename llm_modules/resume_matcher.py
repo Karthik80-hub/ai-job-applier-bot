@@ -1,12 +1,15 @@
 # llm_modules/resume_matcher.py
 
+import os
 from dotenv import load_dotenv
+from openai import OpenAI
+from llm_modules.resume_parser import extract_skills_from_resume
+
 load_dotenv()
 
-from configs.criteria_loader import load_criteria
-
 def filter_and_rank(jobs):
-    criteria = load_criteria()
+    resume_path = os.getenv("RESUME_PATH", "data/your_resume.pdf")
+    resume_skills = extract_skills_from_resume(resume_path)
     filtered_jobs = []
 
     for job in jobs:
@@ -15,7 +18,9 @@ def filter_and_rank(jobs):
         company = job.get("company", "").lower()
         description = job.get("description", "").lower()
 
-        # Exclusion filters
+        # Exclusion filters (keep criteria.yaml for titles, keywords, companies)
+        from configs.criteria_loader import load_criteria
+        criteria = load_criteria()
         if any(ex in title for ex in criteria["exclude"]["titles"]):
             continue
         if any(ex in company for ex in criteria["exclude"]["companies"]):
@@ -23,30 +28,19 @@ def filter_and_rank(jobs):
         if any(ex in description for ex in criteria["exclude"]["keywords"]):
             continue
 
-        # Title match
+        # Title + Location match
         if not any(t in title for t in criteria["titles"]):
             continue
-
-        # Location match
         if not any(loc in location for loc in criteria["locations"]):
             continue
 
-        # Skills check (basic)
-        matched_skills = [
-            skill for skill in criteria["required_skills"]
-            if skill in description
-        ]
-        if len(matched_skills) >= 2:  # you can tweak this threshold
+        # Skills match from resume
+        matched_skills = [skill for skill in resume_skills if skill in description]
+        if len(matched_skills) >= 2:
             job["matched_skills"] = matched_skills
             filtered_jobs.append(job)
 
     return filtered_jobs
-
-import os
-from dotenv import load_dotenv
-from openai import OpenAI
-
-load_dotenv()
 
 def generate_custom_resume(job, test=False):
     file_name = f"resume_templates/output/resume_{job['company'].lower().replace(' ', '_')}_{job['title'].lower().replace(' ', '_')}.txt"
@@ -71,11 +65,13 @@ Location: {job['location']}
 Description: {job['description']}
 
 Candidate Background:
-- 4 years in ML, Full Stack Development, and AWS
-- Worked on ML model deployment using SageMaker, Bedrock
-- Hands-on with PyTorch, TensorFlow, HuggingFace, LangChain
-- Built MLOps pipelines with Docker, Lambda, Terraform
-- Deployed apps with Django, FastAPI, PostgreSQL, Redis
+- Experienced in Machine Learning, Full Stack Development, and Cloud Engineering
+- Proficient in Python, JavaScript, SQL, and common data structures
+- Skilled in using ML frameworks like PyTorch, TensorFlow, and Hugging Face
+- Built and deployed models using AWS (SageMaker, Lambda, Bedrock)
+- Familiar with Docker, Kubernetes, CI/CD pipelines, and Terraform
+- Developed APIs and applications with Django, FastAPI, PostgreSQL, and Redis
+- Passionate about solving real-world problems with AI and automation
 
 Generate a tailored resume summary under 200 words. Use bullet points and match keywords from the job description.
 """

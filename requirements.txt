@@ -1,17 +1,38 @@
-openai
-playwright
-bs4
-requests
-pydantic
-python-dotenv
-langchain
+# --- Core Web Framework ---
+fastapi==0.109.1
+uvicorn==0.27.0
+python-dotenv==1.0.0
+pydantic==2.6.4
+requests==2.31.0
 
-# Add for dashboard + database
-streamlit
-psycopg2-binary
-pandas
-matplotlib
-python-docx
-docx2pdf; platform_system == "Windows"
-PyMuPDF
-phonenumbers
+# --- Browser Automation & Scraping ---
+playwright==1.41.1
+beautifulsoup4==4.12.2
+selenium==4.16.0
+
+# --- NLP & Machine Learning ---
+nltk==3.8.1
+scikit-learn==1.3.2
+spacy==3.8.1
+sentence-transformers==2.2.2
+openai==1.30.1
+
+# --- Document Parsing ---
+python-docx==1.0.1
+PyMuPDF==1.23.8
+python-multipart>=0.0.9
+pytesseract==0.3.10 
+docx2pdf==0.1.8
+
+# --- Database ---
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.25
+
+# --- Gradio UI ---
+gradio==4.28.0
+
+# --- Testing & Dev Tools ---
+pytest==7.4.4
+black==24.1.1
+flake8==7.0.0
+isort==5.13.2

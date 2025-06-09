@@ -6,8 +6,8 @@
     "submit": "button[type='submit']"
   },
   "greenhouse.io": {
-    "name": "input#first_name",
-    "email": "input#email",
+    "name": "Karthik Chunchu#first_name",
+    "email": "chunchukarthik26@gmail.com#email",
     "resume": "input#resume",
     "submit": "input[type='submit']"
   },

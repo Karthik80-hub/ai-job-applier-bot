@@ -1,0 +1,112 @@
+sources:
+  - name: American Express
+    platform: eightfold
+    url: https://aexp.eightfold.ai/careers/job/29083548
+
+  - name: American Express
+    platform: eightfold
+    url: https://aexp.eightfold.ai/careers/job/29138123
+
+  - name: Ascendion
+    platform: custom
+    url: https://ascendion.com/job-inner-page/?post=331084
+
+  - name: DMI Inc
+    platform: icims
+    url: https://careers-dminc.icims.com/jobs/27994/job
+
+  - name: AAA
+    platform: custom
+    url: https://careers.ace.aaa.com/us/en/job/JR202529295/Java-Angular-Developer
+
+  - name: Capgemini
+    platform: custom
+    url: https://careers.capgemini.com/job/Atlanta-Java-Developer-GA-30301/1204053401/?feedId=388933&utm_source=
+
+  - name: Chewy
+    platform: custom
+    url: https://careers.chewy.com/us/en/job/CHINUS6893349EXTERNALENUS/Software-Engineer-II?utm_source
+
+  - name: Fitch
+    platform: custom
+    url: https://careers.fitch.group/job/New-York-Senior-Software-Engineer%2C-Full-Stack-NY-10001/1204068801/
+
+  - name: MSCI
+    platform: custom
+    url: https://careers.msci.com/job/technology/new-york/software-developer-full-stack/2025-2956?mode=apply&iis=
+
+  - name: McKesson
+    platform: custom
+    url: https://careers.mckesson.com/en/job/-/-/733/81298004096
+
+  - name: Nike
+    platform: custom
+    url: https://careers.nike.com/software-engineer/job/R-61123
+
+  - name: Oceaneering
+    platform: custom
+    url: https://careers.oceaneering.com/global/en/job/OCINGLOBAL29423
+
+  - name: SAS
+    platform: icims
+    url: https://careers-sas.icims.com/jobs/39099/software-developer-(java---golang)/job
+
+  - name: CHG Healthcare
+    platform: workday
+    url: https://chghealthcare.wd1.myworkdayjobs.com/External/job/Fort-Lauderdale-FL/Full-Stack-Software-Engineer_JR103245
+
+  - name: Oracle EDMN
+    platform: oracle
+    url: https://edmn.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/66173?utm_medium=jobshare
+
+  - name: Oracle EGAY
+    platform: oracle
+    url: https://egay.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_4001/job/35383?utm_medium=jobshare
+
+  - name: NICE
+    platform: greenhouse
+    url: https://job-boards.eu.greenhouse.io/nice/jobs/4590668101?gh_jid=4590668101
+
+  - name: CVS Health
+    platform: phenom
+    url: https://jobs.cvshealth.com/us/en/job/CVSCHLUSR0580202EXTERNALENUS/Senior-Software-Development-Engineer?utm_source=&utm_medium=phenom-feeds
+
+  - name: Grainger
+    platform: custom
+    url: https://jobs.grainger.com/job/CHICAGO-Senior-Full-Stack-Software-Engineer-IL-60654-4203/1291545100/?feedId=288400&utm_source=&utm_campaign=
+
+  - name: Barracuda
+    platform: jobvite
+    url: https://jobs.jobvite.com/barracuda-networks-inc/job/ooCUvfw9
+
+  - name: Internet Brands
+    platform: jobvite
+    url: https://jobs.jobvite.com/internetbrands/job/ozuSvfwa
+
+  - name: UBS
+    platform: taleo
+    url: https://jobs.ubs.com/TGNewUI/Search/Home/Home?partnerid=25008&siteid=5155#jobDetails=319071_5155
+
+  - name: Kyndryl
+    platform: workday
+    url: https://kyndryl.wd5.myworkdayjobs.com/en-US/KyndrylProfessionalCareers/job/MD-USA/Software-Engineer---Developer_R-40438-1
+
+  - name: Raymond James
+    platform: workday
+    url: https://raymondjames.wd1.myworkdayjobs.com/en-US/RaymondJamesCareers/job/Saint-Petersburg-Florida---United-States/Senior-Java-Engineer_R-0004614
+
+  - name: Salesforce
+    platform: workday
+    url: https://salesforce.wd12.myworkdayjobs.com/en-US/External_Career_Site/job/California---San-Francisco/MTS-Software-Engineer_JR296804-1
+
+  - name: Uber
+    platform: custom
+    url: https://www.uber.com/global/en/careers/list/142727/
+
+  - name: Wells Fargo
+    platform: custom
+    url: https://www.wellsfargojobs.com/en/jobs/r-454309/senior-java-developer/
+
+  - name: Together AI
+    platform: greenhouse
+    url: https://job-boards.greenhouse.io/togetherai

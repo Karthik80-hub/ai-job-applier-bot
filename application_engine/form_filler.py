@@ -5,7 +5,7 @@ import os
 import time
 
 from application_engine.job_status_service import log_and_notify
-from application_engine.user_profile_service_db import get_user_answer
+from application_engine.user_profile_service import get_user_answer
 
 def get_selectors(job_url):
     with open("site_config.json", "r") as f:
