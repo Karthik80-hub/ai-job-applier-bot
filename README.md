@@ -293,3 +293,6 @@ This tool is designed to assist with job applications and should be used respons
 - OpenAI for providing the GPT-4 API
 - The open-source community for various libraries and tools used in this project
 - Contributors and users who have provided feedback and improvements
+
+---
+*Last updated: Test MCP server functionality*
